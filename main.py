@@ -1,6 +1,7 @@
+import time
 from selenium import webdriver
+import undetected_chromedriver as uc
 
-PATH = "chromedriver.exe"
+driver = uc.Chrome()
+driver.get('https://nowsecure.nl')
 
-driver = webdriver.Chrome(PATH)
-driver.get('https://www.google.com')
